@@ -1,0 +1,141 @@
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    user-select: none;
+}
+.calcOuter{
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    padding: 5px;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 225, 255);
+    background: rgba(0, 0, 0, 0.781);
+}
+.calcScreen{
+    width: 200px;
+    height: 70px;
+    /* background-color: black; */
+    color: whitesmoke;
+}
+img {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    filter: blur(20px); 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    opacity: 1;
+    
+}
+.calcButtonArea{
+    /* background-color: black; */
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+}
+.button{
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+    background: rgba(255, 255, 255, 0.068);
+    width: 30px;
+    height: 20px;
+    padding: 8px;
+    display: inline;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: rgba(255, 255, 255, 0.101);
+}
+
+.button2{
+    background-color: rgba(255, 255, 255, 0.145);
+}
+.button2:hover{
+    background-color: rgba(255, 255, 255, 0.175);
+}
+.button3{
+    background-color: rgba(140, 65, 65, 0.267);
+}
+.button3:hover{
+    background-color: rgba(140, 65, 65, 0.353);
+}
+.button4{
+    background-color:#ffb0b0;
+}
+.button4:hover{
+    background-color:#ffa0a0;
+}
+.button:active{
+    background-color: rgb(0, 204, 255);
+}
+.button4:active{
+    background-color:#ff8c8c;
+}
+
+
+.previous{
+    text-align: right;
+    color: gray;
+    margin-right:10px ;
+    font-size: 8px;
+}
+.current{
+    text-align: right;
+    margin-right:10px ;
+}
+.historysymbol{
+    text-align: left;
+    margin-right:10px ;
+    font-size: 10px;
+    
+}
+
+/* .historyOuter{
+    filter:blur(1px)
+} */
+.historySection{
+    position: fixed;
+    margin-top: 100px;
+    background: rgba(0, 0, 0, 0.873);
+    width: 180px;
+    height: 160px;
+    border-radius: 10px;
+    color:white;
+    padding: 5px;
+    overflow: scroll;
+    
+    animation: popup 0.3s;
+    animation-direction: alternate;
+}
+
+
+@keyframes popup {
+    0%   {height: 0px;}
+    100%   {height: 160px;}
+    
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+dl,dd{
+
+text-align: right;
+}
+dd{
+    color: gray;
+    font-size: 5px;
+}
+dl{
+    color:rgb(77, 184, 255);
+    font-size: 7px;
+}
