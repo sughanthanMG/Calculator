@@ -3,6 +3,8 @@ import ButtonArea from './ButtonArea';
 import ScreenArea from './ScreenArea';
 import Gradient from './Gradient';
 import history from '../history';
+import './appstyle.css';
+
 function App() {
 
 const [historyVisibility,setHistoryVisibility]=useState(false);
@@ -148,8 +150,8 @@ function clearScreen()
     <div>
     
     <Gradient/>
-    <div className='calcOuter'>
-    <div className='calcScreen'>
+    <div className='calcouter'>
+    <div className='calcscreen'>
     <ScreenArea
       currentScreen={currentScreen}
       previousScreen={previousScreen}
@@ -158,7 +160,7 @@ function clearScreen()
     />
     </div>
     
-    <div className='calcButtonArea'>
+    <div className='calcbuttonarea'>
       <ButtonArea
       clearInput={clearInput}
       backSpace={backSpace}
@@ -169,8 +171,8 @@ function clearScreen()
       />
     </div>
     </div>
-    <div className='historyOuter'>
-    <div className='historySection' style={{display:!historyVisibility&&"none"}}>
+    <div className='historyouter'>
+    <div className='historysection' style={{display:!historyVisibility&&"none"}}>
     <div style={{fontSize:"8px"}}>⏱ History</div>
     <ul>
       

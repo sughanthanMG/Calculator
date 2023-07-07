@@ -1,0 +1,16 @@
+.previous{
+    text-align: right;
+    color: gray;
+    margin-right:10px ;
+    font-size: 8px;
+}
+.current{
+    text-align: right;
+    margin-right:10px ;
+}
+.historysymbol{
+    text-align: left;
+    margin-right:10px ;
+    font-size: 10px;
+    
+}

@@ -1,0 +1,11 @@
+img {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    filter: blur(20px); 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    opacity: 1;
+    
+}
